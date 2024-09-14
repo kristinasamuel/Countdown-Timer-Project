@@ -91,12 +91,10 @@ export default function Countdown() {
   const handleSecondsChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setSeconds(Number(e.target.value) || "");
   };
-//  final output of the project
+
   return (
-  //   <div className="flex items-center justify-center min-h-screen bg-gray-900">
-  // <div className="bg-red-600 rounded p-4 md:rounded-lg md:p-8 w-full md:h-80 h-80 mt-10 max-w-sm md:max-w-md">
   <div className="flex items-center justify-center min-h-screen bg-gray-900">
-  <div className="bg-red-600 rounded-lg p-4 md:p-8 w-full h-auto md:h-80 mt-10 max-w-sm md:max-w-md">
+  <div className="bg-red-600 rounded-lg p-4 md:p-8 w-full h-auto md:h-80  max-w-sm md:max-w-md">
     
 
 
