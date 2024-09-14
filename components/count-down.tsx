@@ -93,8 +93,13 @@ export default function Countdown() {
   };
 //  final output of the project
   return (
-    <div className="flex flex-center justify-center h-screen bg-gray-900">
-      <div className="bg-red-600 rounded lg p-8 w-full h-80 mt-32 max-w-md ">
+  //   <div className="flex items-center justify-center min-h-screen bg-gray-900">
+  // <div className="bg-red-600 rounded p-4 md:rounded-lg md:p-8 w-full md:h-80 h-80 mt-10 max-w-sm md:max-w-md">
+  <div className="flex items-center justify-center min-h-screen bg-gray-900">
+  <div className="bg-red-600 rounded-lg p-4 md:p-8 w-full h-auto md:h-80 mt-10 max-w-sm md:max-w-md">
+    
+
+
         <h1 className="text-4xl font-bold mb-4 text-gray-800 dark:text-gray-200 text-center">
           Countdown Timer
         </h1>
@@ -105,20 +110,20 @@ export default function Countdown() {
             value={minutes}
             onChange={handleMinutesChange}
             placeholder="Minutes"
-            className="flex-1 mr-2 rounded-md border-gray-300 dark:border-gray-700 dark:text-gray-200 text-xl font-bold"
+            className="flex-1 mr-2 rounded-md border-gray-300 dark:border-gray-700 dark:text-gray-200 text-xl"
           />
           <Input
             type="number"
             id="seconds"
             value={seconds}
             onChange={handleSecondsChange}
-            placeholder="Seconds"
-            className="flex-1 ml-2 rounded-md border-gray-300 dark:border-gray-700 dark:text-gray-200 text-xl font-bold"
+            placeholder="Second"
+            className="flex-1 ml-2 rounded-md border-gray-300 dark:border-gray-700 dark:text-gray-200 text-xl "
           />
           <Button
             onClick={handleSetDuration}
             variant="outline"
-            className="text-gray-800 dark:text-gray-200 text-xl font-bold ml-4"
+            className="text-gray-800 dark:text-gray-200 text-xl  ml-4"
           >
             Set
           </Button>
@@ -130,21 +135,21 @@ export default function Countdown() {
           <Button
             onClick={handleStart}
             variant="outline"
-            className="text-gray-800 dark:text-gray-200 font-bold text-xl"
+            className="text-gray-800 dark:text-gray-200 text-xl"
           >
             {isPaused ? "Resume" : "Start"}
           </Button>
           <Button
             onClick={handlePause}
             variant="outline"
-            className="text-gray-800 dark:text-gray-200 font-bold text-xl"
+            className="text-gray-800 dark:text-gray-200  text-xl"
           >
             Pause
           </Button>
           <Button
             onClick={handleReset}
             variant="outline"
-            className="text-gray-800 dark:text-red-700 font-bold text-xl"
+            className="text-gray-800 dark:text-red-700 text-xl"
           >
             Reset
           </Button>
